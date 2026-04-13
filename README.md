@@ -62,7 +62,7 @@ Data Source (API / Scraper)  Data Cleaning (Python) ↓ Lead Scoring Logic ↓ S
 
 ---
 
-## 🧠 Lead Scoring Logic
+## Lead Scoring Logic
 Leads are scored based on a combination of factors such as:
 - Company attributes (industry, size, location)
 - Market relevance
@@ -73,7 +73,7 @@ The output is a **ranked dataset** that prioritizes high-value opportunities.
 
 ---
 
-## 📊 Output
+## Output
 - Cleaned dataset of leads  
 - Lead scores assigned to each company  
 - Ranked list of prospects  
@@ -81,14 +81,14 @@ The output is a **ranked dataset** that prioritizes high-value opportunities.
 
 ---
 
-## 📈 Business Impact (Simulated)
+## Business Impact (Simulated)
 - Reduces manual lead qualification effort  
 - Improves targeting efficiency  
 - Enables data-driven market expansion decisions  
 
 ---
 
-## 🔗 Related Dashboard
+## Related Dashboard
 This pipeline feeds into a **Market Expansion Dashboard** built in Tableau to visualize:
 - Top markets
 - Lead distribution
@@ -96,7 +96,7 @@ This pipeline feeds into a **Market Expansion Dashboard** built in Tableau to vi
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 - Integrate real-time APIs (e.g., LinkedIn, Google Maps)
 - Automate pipeline scheduling
 - Add AI-based lead scoring
@@ -104,13 +104,13 @@ This pipeline feeds into a **Market Expansion Dashboard** built in Tableau to vi
 
 ---
 
-## 👤 Author
+## Author
 **Patricia Stephanie**  
 Aspiring Data Automation & Analytics Specialist  
 
 ---
 
-## 🏁 Summary
+## Summary
 This project demonstrates the ability to:
 - Build **data pipelines**
 - Apply **business logic to data**
