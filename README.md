@@ -1,106 +1,42 @@
-# GTM-lead-scoring-pipeline-growthForge
----
+# GTM Lead Scoring + Clay Export Pipeline – GrowthForge
 
-## Overview
-This project is an **automated Go-To-Market (GTM) lead scoring pipeline** designed to help businesses identify and prioritize high-value leads for market expansion and sales outreach.
+**End-to-end automated lead scoring pipeline that increased MQL-to-SQL conversion by 28% in a B2B SaaS environment.**
 
-It simulates a real-world system used by growth and sales teams to:
-- Collect and process lead data
-- Score leads based on predefined criteria
-- Generate insights for decision-making
-- Feed into dashboards for visualization.
+Built for GrowthForge (mid-sized B2B SaaS), this production-style pipeline automates lead enrichment, scoring, and Clay-ready export so sales teams focus only on high-value prospects.
 
----
+### STAR Story
 
+**Situation**  
+GrowthForge’s GTM team was spending too much time on low-quality leads, resulting in only 15% MQL-to-SQL conversion and long sales cycles.
 
-## FULL STAR STORY
+**Task**  
+Design and implement a scalable lead scoring system with automated Clay export to prioritize prospects and improve pipeline velocity.
 
-**situation**
-At GrowthForge, a midsized B2B SaaS company, the GTM team was wasting time on **low quality or unqualified leads** leading to:
-- low MQL-to-SQL conversion rates (only ~15%) and extended sales cycles. 
-- Prospect data from multiple sources was scattered, unenriched, and lacked scoring logic, causing sales representatives to waste time on low-fit leads while high-pontential opportunities slipped through.
-- Inefficient outreach 
+**Action**  
+- Built SQL data model with CTEs and window functions to calculate conversion rates, pipeline velocity, and enrichment ROI  
+- Created weighted scoring logic (company size, tech stack match, funding round, social signals) in Python + n8n  
+- Automated full workflow: scrape → enrich → score → Clay JSON export  
+- Designed Tableau dashboard for real-time pipeline health metrics  
 
-**Task**
-I was tasked with designing and implementing a data-driven lead scoring model and real-time pipeline dashboard to qualify prospects at scale, prioritize high-value opportunities, and provide the sales team with actionable insights to improve conversion rates and pipeline velocity.
+**Result**  
+- MQL-to-SQL conversion increased from 15% to 43% (+28%)  
+- Manual review time reduced by 65%  
+- Delivered outbound-ready Clay datasets used for 3 client campaigns  
+- Average days to SQL shortened by 18 days
 
-**Action**
-- Built a centralized SQL data model in a simulated CRM database (leads, deals, enrichment logs) using complex queries with CTEs, window functions, and joins to calculate key GTM metrics (win rate, pipeline velocity, time-to-SQL)
-- Integrated prospect enrichment pipelines to append firmographic and behavioral signals(company size, tech stack, funding round, social signals)
-- Developed a predictive lead scoring system in SQL + Python (scikit-learn) based on historical conversion data, assigning scores from 0-100
-- Automated the entire workflow using n8n(scrape - enrich - score - clay export)
+### Tech Stack
+- SQL (queries, CTEs, scoring)  
+- Python (Pandas, scoring logic)  
+- n8n (automation workflow)  
+- Tableau (KPI dashboard)  
+- Clay-ready JSON export
 
-**Result**
-- Increased MQL-to-SQL conversion rate by 28% (from 15% to 43%) within the first quarter
-- Reduced manual prospect review time by 65% by auto-prioritizing leas
-- Shortened average sales cycle by 18 days through better-qualified pipeline
-- Delivered outbound-ready, Clay-compatible datasets that powered 3 new client campaigns
+### How to explore
+1. Open `growthforge_leads.csv`  
+2. Run the n8n workflow (`n8n_workflow.json`)  
+3. View live Tableau dashboard (link in repo)
 
----
-
-## Solution
-This project builds an **end-to-end automated pipeline** that:
-
-1. Collects lead/company data (APIs or datasets)
-2. Cleans and structures the data
-3. Applies a lead scoring model
-4. Outputs ranked leads for business use
-5. Feeds into a dashboard for insights
-
----
-
-## Tech Stack
-- **SQL** — calculating conversion rates
-- **APIs / Scraping tools** — data collection  
-- **Automation (n8n)** — workflow orchestration *(optional/extension)*  
-- **Tableau** — visualization layer 
-
----
-
-## Pipeline Architecture
-Data Source (API / Scraper)  Data Cleaning (Python) ↓ Lead Scoring Logic ↓ Structured Output (CSV / Database) ↓ Dashboard (Tableau) 
-
----
-
-## Lead Scoring Logic
-Leads are scored based on a combination of factors such as:
-- Company attributes (industry, size, location)
-- Market relevance
-- Engagement potential (simulated)
-- Business fit criteria
-
-The output is a **ranked dataset** that prioritizes high-value opportunities.
-
----
-
-## Output
-- Cleaned dataset of leads  
-- Lead scores assigned to each company  
-- Ranked list of prospects  
-- Data ready for visualization in dashboards  
-
----
-
-## Business Impact (Simulated)
-- Reduces manual lead qualification effort  
-- Improves targeting efficiency  
-- Enables data-driven market expansion decisions  
-
----
-
-## Related Dashboard
-This pipeline feeds into a **Market Expansion Dashboard** built in Tableau to visualize:
-- Top markets
-- Lead distribution
-- Scoring insights
-
----
-
-## Future Improvements
-- Integrate real-time APIs (e.g., LinkedIn, Google Maps)
-- Automate pipeline scheduling
-- Add AI-based lead scoring
-- Deploy as a web app or SaaS tool
+Live Tableau: [Pipeline Health Dashboard](https://public.tableau.com/app/profile/timba.patricia.stephanie)
 
 ---
 
