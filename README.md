@@ -42,7 +42,7 @@ Live Tableau: [Pipeline Health Dashboard](https://public.tableau.com/app/profile
 
 ## Author
 **Patricia Stephanie**  
-Aspiring Data Automation & Analytics Specialist  
+Junior GTM Data Analyst and Clay & Data Specialist  
 
 ---
 
