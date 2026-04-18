@@ -1,5 +1,9 @@
 # GTM Lead Scoring + Clay Export Pipeline – GrowthForge
 
+**Freelance GTM Data Analyst and Clay & Data Specialist Project**  
+**Q1 2025 | Delivered via Freelancer.com**
+
+
 **End-to-end automated lead scoring pipeline that increased MQL-to-SQL conversion by 28% in a B2B SaaS environment.**
 
 Built for GrowthForge (mid-sized B2B SaaS), this production-style pipeline automates lead enrichment, scoring, and Clay-ready export so sales teams focus only on high-value prospects.
@@ -24,6 +28,8 @@ Design and implement a scalable lead scoring system with automated Clay export t
 - Delivered outbound-ready Clay datasets used for 3 client campaigns  
 - Average days to SQL shortened by 18 days
 
+---
+
 ### Tech Stack
 - SQL (queries, CTEs, scoring)  
 - Python (Pandas, scoring logic)  
@@ -40,19 +46,17 @@ Live Tableau: [Pipeline Health Dashboard](https://public.tableau.com/app/profile
 
 ---
 
-## Author
-**Patricia Stephanie**  
-Junior GTM Data Analyst and Clay & Data Specialist  
+**Client**: GrowthForge (B2B SaaS)  
+**Role**: Freelance GTM Data Analyst and Clay & Data Specialist  
+**Date**: Q1 2025
 
 ---
 
-## Summary
-This project demonstrates the ability to:
-- Build **data pipelines**
-- Apply **business logic to data**
-- Automate workflows
-- Deliver **actionable insights**
+## Author
+**Timba Patricia Stephanie**  
+Junior GTM Data Analyst and Clay & Data Specialist  
 
+---
 
 
 
