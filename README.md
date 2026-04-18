@@ -39,10 +39,7 @@ Design and implement a scalable lead scoring system with automated Clay export t
 
 ### How to explore
 1. Open `growthforge_leads.csv`  
-2. Run the n8n workflow (`n8n_workflow.json`)  
-3. View live Tableau dashboard (link in repo)
-
-Live Tableau: [Pipeline Health Dashboard](https://public.tableau.com/app/profile/timba.patricia.stephanie)
+2. Run the n8n workflow (`n8n_workflow.json`) 
 
 ---
 
