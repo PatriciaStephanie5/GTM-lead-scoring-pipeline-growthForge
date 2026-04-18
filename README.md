@@ -20,7 +20,7 @@ Design and implement a scalable lead scoring system with automated Clay export t
 - Built SQL data model with CTEs and window functions to calculate conversion rates, pipeline velocity, and enrichment ROI  
 - Created weighted scoring logic (company size, tech stack match, funding round, social signals) in Python + n8n  
 - Automated full workflow: scrape → enrich → score → Clay JSON export  
-- Designed Tableau dashboard for real-time pipeline health metrics  
+ 
 
 **Result**  
 - MQL-to-SQL conversion increased from 15% to 43% (+28%)  
